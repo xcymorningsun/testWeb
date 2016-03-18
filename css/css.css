@@ -1,0 +1,123 @@
+/*左侧信息展示面板 dwl 2015.12.8 新增*/
+.left-panel-container {
+    width: 500px;
+    height: 286px;
+}
+
+.left-panel-title {
+    height: 36px;
+    background-color: #0F6CA2;
+}
+
+    .left-panel-title p {
+        color: white;
+        font-size: 20px;
+        line-height: 36px;
+        padding-left: 30px;
+    }
+
+.left-panel-content {
+    height: 250px;
+    padding: 0px 10px 10px 10px;
+}
+
+.left-panel-content-background {
+    background-color: white;
+    filter: Alpha(Opacity=80, Style=0);
+    height: 250px;
+    width: 500px;
+    z-index: -1;
+    opacity: 0.80;
+    position: absolute;
+    -moz-border-radius: 8px;
+    -webkit-box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 10px;
+    box-shadow: #666 0px 0px 10px;
+    behavior: url(/PIE.htc);
+}
+
+.left-panel-content-name {
+    height: 35px;
+    border-bottom: 1px solid #C7C2C2;
+    padding-top: 6px;
+    text-align: center;
+}
+
+.left-panel-content-name-a {
+    display: inline-block;
+    width: 90%;
+}
+
+    .left-panel-content-name-a a {
+        font-family: 'Microsoft YaHei';
+        font-size: 15px;
+        text-decoration: none;
+        padding: 3px;
+        color: black;
+        width: 19%;
+        text-align: center;
+        display: none;
+    }
+
+        .left-panel-content-name-a a:hover, .left-panel-content-name span:hover {
+            cursor: pointer;
+            background-color: lightblue;
+            border-radius: 2px;
+        }
+
+    .left-panel-content-name-a .active {
+        color: #3FB618;
+    }
+
+    .left-panel-content-name-a .is-show {
+        display: inline-block;
+    }
+
+.left-panel-content-other {
+    height: 203px;
+    padding-top: 20px;
+}
+
+.left-panel-content-picture {
+    height: 183px;
+    width: 50%;
+    float: left;
+}
+
+#left-panel-carousel-inner img {
+    height: 183px;
+    width: 240px;
+}
+
+.left-panel-content-word-button {
+    height: 183px;
+    width: 47%;
+    float: right;
+}
+
+.left-panel-content-word {
+    height: 145px;
+    width: 100%;
+    overflow: auto;
+}
+
+    .left-panel-content-word p {
+        font-family: 'Microsoft YaHei';
+        text-indent: 29px;
+    }
+
+.left-panel-content-button {
+    height: 38px;
+    width: 100%;
+    padding: 13px 0px 0px 0px;
+    text-align: center;
+}
+
+    .left-panel-content-button button {
+        padding: 3px;
+        height: 25px;
+        width: 45px;
+        font-size: 12px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }

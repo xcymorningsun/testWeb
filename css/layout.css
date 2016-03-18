@@ -1,0 +1,494 @@
+body {
+    overflow: hidden;
+}
+
+* {
+    font-family: 'Microsoft YaHei';
+}
+
+.navbar-offset {
+    margin-top: 50px;
+}
+
+.img_title {
+    margin-top: 8px;
+    margin-left: 15px;
+    width: 300px;
+    height: 48px;
+}
+
+#mapDiv {
+    position: absolute;
+    top: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 35;
+}
+
+    #mapDiv .ol-zoom {
+        font-size: 1.2em;
+    }
+
+.zoom-top-opened-sidebar {
+    margin-top: 5px;
+}
+
+.zoom-top-collapsed {
+    margin-top: 45px;
+}
+
+.sidebar {
+    z-index: 45;
+}
+
+.sidebar-left {
+    width: 36px;
+}
+
+.sidebar-right {
+    width: 285px;
+    margin-top: 15px;
+}
+
+.main-row {
+    position: relative;
+    top: 0;
+}
+
+.ca-logo {
+    float: left;
+    padding: 10px 10px 10px 0px;
+}
+
+.ca-title {
+    float: left;
+}
+
+.ca-menuContainer {
+    margin-right: 8px;
+    margin-top: 14px;
+}
+
+.ca-dropDownMenu {
+    margin-right: 5px;
+}
+
+.ca-dropBtn {
+    padding: 0px !important;
+    font-size: 33px;
+}
+
+.ca-dropMenu {
+    margin-top: 18px !important;
+    padding: 0px;
+    min-width: 120px;
+}
+
+.ca-MenuItem {
+    padding: 5px !important;
+}
+
+.ca-itemBtn {
+    font-size: x-large;
+}
+
+.ca-itemText {
+    font-size: larger;
+}
+
+.ca-itemDivider {
+    margin: 1px !important;
+}
+
+.ca-leftItem {
+    color: white;
+    font-size: 32px;
+    margin: 0px;
+    padding: 2px;
+    padding-bottom: 3px;
+}
+
+.navbar-brand {
+    font-size: 26px;
+    font-family: microsoft yahei;
+    padding-top: 17px;
+}
+
+.sidebar-left {
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 0px;
+}
+
+.esriSimpleSliderBL {
+    background-color: #828280;
+    color: white;
+    border: 0px;
+    left: 21px;
+}
+
+.esriSimpleSliderIncrementButton:hover {
+    background-color: #747473;
+}
+
+.esriSimpleSliderDecrementButton:hover {
+    background-color: #747473;
+}
+
+#clearCMenu span {
+    font-size: 13px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+#startCMenu span {
+    color: green;
+}
+
+#endCMenu span {
+    color: red;
+}
+
+#mapSwitch {
+    height: 34px;
+    background-color: #FFFFFF;
+    border: 1px solid #cccccc;
+    color: #333333;
+    line-height: 10px;
+}
+
+#search {
+    padding: 0px;
+}
+
+    #search .glyphicon-search {
+        font-size: 33px;
+        color: white;
+        margin-right: 5px;
+    }
+
+.leftBtn .icon-newMLCA {
+    background-color: #e35c9f;
+}
+
+.leftBtn .icon-newFQXZ {
+    background-color: #66ba59;
+}
+
+.leftBtn .icon-newFLXC {
+    background-color: #2b4f89;
+}
+
+.leftBtn .icon-newJPC {
+    background-color: #3baaf0;
+}
+
+.leftBtn .icon-newZXC {
+    background-color: #e33c44;
+}
+
+.leftBtn .icon-newXJTSC {
+    background-color: #e27934;
+}
+
+
+.menu-font {
+    float: left;
+    margin-left: 5px;
+    margin-top: 7px;
+}
+
+.layer-switch {
+    float: right;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+/*图例*/
+#class-break-legend-container {
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    z-index: 40;
+    background-color: white;
+    width: 200px;
+    display: none;
+}
+
+#map-legend-container-background {
+    background-color: white;
+    filter: Alpha(Opacity=80, Style=0);
+    height: 170px;
+    width: 120px;
+    opacity: 0.80;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    -moz-border-radius: 8px;
+    -webkit-box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 10px;
+    box-shadow: #666 0px 0px 10px;
+    behavior: url(/PIE.htc);
+    z-index: -1;
+}
+
+#map-legend-container {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    z-index: 50;
+    width: 120px;
+    height: 170px;
+}
+
+/*街景 dwl*/
+#panoContainer {
+    display: none;
+    position: absolute;
+    top: 50px;
+    bottom: 0px;
+    right: 0px;
+}
+
+#panoDialog {
+    width: 100%;
+    height: 100%;
+}
+
+#panoClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+    #panoClose .glyphicon-remove-circle {
+        z-index: 40;
+    }
+
+/*esri弹窗 dwl*/
+.esriPopup .titlePane, .esriPopup .pointer.top, .esriPopup .pointer.topRight {
+    background-color: #8CBF26;
+}
+
+.esriPopup .actionsPane {
+    display: none;
+}
+
+.esriPopup .contentPane {
+    border-radius: 0px 0px 5px 5px;
+    background-color: #FFFFFF;
+    padding-top: 0px;
+}
+
+    .esriPopup .contentPane .tab-content {
+        margin-top: 10px;
+    }
+
+    .esriPopup .contentPane p {
+        padding-bottom: 5px;
+        border-bottom-width: 1px;
+        border-bottom-color: #8CBF26;
+        border-bottom-style: solid;
+    }
+
+    .esriPopup .contentPane a {
+        text-decoration: none;
+    }
+
+    .esriPopup .contentPane .nearSearch {
+        text-decoration: none;
+        margin-left: 5px;
+    }
+
+
+/*左侧信息展示面板 dwl 2015.12.8 新增*/
+.left-panel-container {
+    width: 500px;
+    height: 286px;
+}
+
+.left-panel-title {
+    height: 36px;
+    background-color: #0F6CA2;
+}
+
+    .left-panel-title p {
+        color: white;
+        font-size: 20px;
+        line-height: 36px;
+        padding-left: 30px;
+    }
+
+.left-panel-content {
+    height: 250px;
+    padding: 0px 10px 10px 10px;
+}
+
+.left-panel-content-background {
+    background-color: white;
+    filter: Alpha(Opacity=80, Style=0);
+    height: 250px;
+    width: 500px;
+    z-index: -1;
+    opacity: 0.80;
+    position: absolute;
+    -moz-border-radius: 8px;
+    -webkit-box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 10px;
+    box-shadow: #666 0px 0px 10px;
+    behavior: url(/PIE.htc);
+}
+
+.left-panel-content-name {
+    height: 35px;
+    border-bottom: 1px solid #C7C2C2;
+    padding-top: 6px;
+    text-align: center;
+}
+
+.left-panel-content-name-a {
+    display: inline-block;
+    width: 90%;
+}
+
+    .left-panel-content-name-a a {
+        font-family: 'Microsoft YaHei';
+        font-size: 15px;
+        text-decoration: none;
+        padding: 3px;
+        color: black;
+        width: 19%;
+        text-align: center;
+        display: none;
+    }
+
+        .left-panel-content-name-a a:hover, .left-panel-content-name span:hover {
+            cursor: pointer;
+            background-color: lightblue;
+            border-radius: 2px;
+        }
+
+    .left-panel-content-name-a .active {
+        color: #3FB618;
+    }
+
+    .left-panel-content-name-a .is-show {
+        display: inline-block;
+    }
+
+.left-panel-content-other {
+    height: 203px;
+    padding-top: 20px;
+}
+
+.left-panel-content-picture {
+    height: 183px;
+    width: 50%;
+    float: left;
+}
+
+#left-panel-carousel-inner img {
+    height: 183px;
+    width: 240px;
+}
+
+.left-panel-content-word-button {
+    height: 183px;
+    width: 47%;
+    float: right;
+}
+
+.left-panel-content-word {
+    height: 145px;
+    width: 100%;
+    overflow: auto;
+}
+
+    .left-panel-content-word p {
+        font-family: 'Microsoft YaHei';
+        text-indent: 29px;
+    }
+
+.left-panel-content-button {
+    height: 38px;
+    width: 100%;
+    padding: 13px 0px 0px 0px;
+    text-align: center;
+}
+
+    .left-panel-content-button button {
+        padding: 3px;
+        height: 25px;
+        width: 45px;
+        font-size: 12px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+/*为美丽淳安、风情小镇、富丽乡村等面板设置位置及颜色 dwl*/
+#left-panel-MLCA {
+    margin: 0px;
+    position: absolute;
+    top: -2px;
+    left: 36px;
+}
+
+    #left-panel-MLCA .left-panel-title {
+        background-color: #E35C9F;
+    }
+
+#left-panel-FQXZ {
+    margin: 0px;
+    position: absolute;
+    top: 33px;
+    left: 36px;
+}
+
+    #left-panel-FQXZ .left-panel-title {
+        background-color: #66BA59;
+    }
+
+#left-panel-FLXC {
+    margin: 0px;
+    position: absolute;
+    top: 68px;
+    left: 36px;
+}
+
+    #left-panel-FLXC .left-panel-title {
+        background-color: #2B4F89;
+    }
+
+#left-panel-JPC {
+    margin: 0px;
+    position: absolute;
+    top: 103px;
+    left: 36px;
+}
+
+    #left-panel-JPC .left-panel-title {
+        background-color: #3BAAF0;
+    }
+
+#left-panel-ZXC {
+    margin: 0px;
+    position: absolute;
+    top: 138px;
+    left: 36px;
+}
+
+    #left-panel-ZXC .left-panel-title {
+        background-color: #E33C44;
+    }
+
+#left-panel-XJTSC {
+    margin: 0px;
+    position: absolute;
+    top: 173px;
+    left: 36px;
+}
+
+    #left-panel-XJTSC .left-panel-title {
+        background-color: #E27934;
+    }
